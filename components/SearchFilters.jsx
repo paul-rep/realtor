@@ -20,7 +20,12 @@ export default function SearchFilters() {
     const path = router.pathname;
     const { query } = router;
 
-    const values = getFilterValues(filterValues)
+    console.log("filter values",filterValues);
+
+    const values = getFilterValues(filterValues);
+
+    console.log("values",values);
+
 
     values.forEach((item) => {
       if(item.value && filterValues?.[item.name]) {
